@@ -24,6 +24,8 @@
 #include <gazebo/gazebo.hh>
 #include <gazebo/physics/physics.hh>
 
+#include <ignition/math/Vector3.hh>
+
 #include "MagneticField.pb.h"
 
 #include "rotors_gazebo_plugins/common.h"
@@ -81,7 +83,7 @@ class GazeboMagnetometerPlugin : public ModelPlugin {
   //// \brief    Pointer to the update event connection.
   event::ConnectionPtr updateConnection_;
 
-  math::Vector3 mag_W_;
+  ignition::math::Vector3d mag_W_;
 
   /// \brief    Magnetic field message.
   /// \details  Reused message object which is defined here to reduce

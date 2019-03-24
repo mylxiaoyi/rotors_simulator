@@ -94,7 +94,7 @@ add_definitions(-DROS_ASSERT_ENABLED)
 
 if (NOT NO_ROS)
   find_package(catkin REQUIRED COMPONENTS
-    cmake_modules
+#    cmake_modules
     cv_bridge
     geometry_msgs
     mav_msgs
